@@ -1,0 +1,90 @@
+<div id="maindiv" style="background-image: url('../assets/background.jpg')">
+    <div id="subdiv">
+
+
+        <form #stRegister="ngForm" (ngSubmit)="onFormSubmitt()" >
+            <div class="formchild">
+                <h1>{{registration}}</h1>
+            </div>
+
+            <label>
+                <p class="label-txt">FIRST NAME</p>
+                <input type="text" name="fname" [(ngModel)]="intern.firstName" class="form-control">
+                <div class="line-box">
+                    <div class="line"></div>
+                </div>
+            </label>
+            <label>
+                <p class="label-txt">LAST NAME</p>
+                <input type="text" name="lname"  [(ngModel)]="intern.lastName" class="form-control">
+                <div class="line-box">
+                    <div class="line"></div>
+                </div>
+            </label>
+            <label>
+                <p class="label-txt">ENTER YOUR EMAIL</p>
+                <input type="text" name="mail" [(ngModel)]="intern.email" class="form-control">
+                <div class="line-box">
+                    <div class="line"></div>
+                </div>
+            </label>
+            <label>
+                <p class="label-txt">PHONE NUMBER</p>
+                <input type="text" name="phone" [(ngModel)]="intern.phoneNumber" class="form-control">
+                <div class="line-box">
+                    <div class="line"></div>
+                </div>
+            </label>
+
+            <label>
+                <p class="label-txt">USERNAME</p>
+                <input type="text" name="username" [(ngModel)]="intern.userName" class="form-control">
+                <div class="line-box">
+                    <div class="line"></div>
+                </div>
+            </label>
+
+            <label>
+                <p class="label-txt">ENTER YOUR PASSWORD</p>
+                <input type="text" name="password" [(ngModel)]="intern.password" class="form-control">
+                <div class="line-box">
+                    <div class="line"></div>
+                </div>
+            </label>
+
+
+            <label>
+                <p class="label-txt">MARITAL STATUS</p>
+                <input type="text" name="marital" [(ngModel)]="intern.marital_status" class="form-control">
+                <div class="line-box">
+                    <div class="line"></div>
+                </div>
+            </label>
+
+            <label>
+                <p class="label-txt">QUALIFICATION</p>
+
+                <div class="input-field">
+                    <select id="" class="inputs" name="fname" [(ngModel)]="intern.lastName">
+                        <option value="0">Select your qualification</option>
+                        <option value="1">BE</option>
+                        <option value="2">BSc(Comp sci)</option>
+                        <option value="3">Msc(Comp sci)</option>
+                    </select>
+                </div>
+                <div class="line-box">
+                    <div class="line"></div>
+                </div>
+            </label>
+
+            <label>
+                <p class="label-txt">UPLOAD CV</p>&nbsp;
+                <div class="input-upload" name="fname">
+                    <input type="file" class="inputs">
+                </div>
+            </label>
+
+            <input type="submit" value="submit" class="btn btn-success">
+        </form>
+    </div>
+</div>
